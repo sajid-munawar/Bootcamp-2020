@@ -15,8 +15,9 @@
 }
 .label {
   display: block;
+  width: 100%;
 }
-.label >input {
+/* .label >input {
   width: 100%;
   
-}
+} */
