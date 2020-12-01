@@ -1,9 +1,10 @@
 import './App.css';
+import ExpenseTrack from "./Expense-track"
 
 function App() {
   return (
     <div className="App">
-      Hello from local in branch 2 
+      <ExpenseTrack/>
     </div>
   );
 }
