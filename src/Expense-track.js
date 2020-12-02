@@ -1,42 +1,41 @@
 import React from 'react'
-
-const transactions= [
-    {amount:500 ,desc:"cash"},
-    {amount:500 ,desc:"cash"},
-    {amount:500 ,desc:"cash"},
-]
-
-function ExpenseTrack() {
+function ExpenseTrack(){
+    const transactions= [
+        {amount:500, desc:"camera"},
+        {amount:200, desc:"book"},
+        {amount:300, desc:"Bike"}
+    ]
     return <div className="app-container">
-        <h1>Expense Tacker</h1>
-        <h4 >Your Balance <br />$500</h4>
+        <h1>Expense Track</h1>
+        <h3 className="balance">Your Balance <br/>$500</h3>
         <div className="expense-container">
-            <h4>Income $700 <br /></h4>
-            <h4>Expense $200 <br /></h4>
+            <h4>IONCOME <br/>$700</h4>
+            <h4>EXPENSE <br/>$200</h4>
         </div>
-        <h3>History</h3>
-        <ul > {transactions.map((transobj,ind)=>{
-            return <li className="list">
-            <span>{transobj.amount}</span>
-            <span>{transobj.desc}</span>
-        </li>
-        })}
-            
-            <li className="list">
-                <span>Cash</span>
-                <span>200</span>
+        <h3>History</h3> <hr/>
+        <ul className="transaction-list">
+            {transactions.map ((transObj,ind)=>{
+                return <li>
+                <span>{transObj.desc}</span>
+                <span>${transObj.amount}</span>
             </li>
-            <li className="list">
-                <span>Cash</span>
-                <span>200</span>
-            </li>
+            })}
         </ul>
-        <hr />
-        <form>
-            <label className="label">Enter Description <br/> <input type="text"></input></label>
-            <label  className="label">Enter Amount  <br/><input type="number"></input></label>
-            <label className="label" > <input type="submit"></input></label>
+        <h3 className="add">Add new transaction</h3>
+        <form className="form">
+            <label>
+                Description <br/>
+                <input type="text"/>
+            </label>
+            <label>
+                Amount <br/>
+                <input type="number"/>
+            </label>
+            <label>
+                <input type="submit"/>
+            </label>
         </form>
+         
     </div>
 }
 export default ExpenseTrack;

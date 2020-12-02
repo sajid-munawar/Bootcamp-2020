@@ -1,0 +1,34 @@
+.app-container {
+  width: 500px;
+  height: 500px;
+  background-color:hsl(0, 0%, 94%);
+  /* text-align: center; */
+  margin: 0 auto;
+  padding: 15px 50px;
+  /* justify-content: space-around; */
+}
+.app-container >h1 {
+  text-align: center;
+}
+.expense-container {
+  display: flex;
+  justify-content: space-around;
+  background-color: white;
+}
+.label {
+  display: block;
+  width: 100%;
+}
+.label >input {
+  width: 100%;
+  padding: 5px;
+  
+}
+.list {
+  justify-content: space-between;
+  display: block;
+  list-style: none;
+  background-color: white;
+  padding: 5px;
+  box-shadow: rgb(70, 50, 13);
+}

@@ -1,34 +1,47 @@
 .app-container {
-  width: 500px;
-  height: 500px;
-  background-color:hsl(0, 0%, 94%);
-  /* text-align: center; */
+  width: 400px;
+  height: 600px;
+  background-color: #efefef;
   margin: 0 auto;
+  margin-top: 5px;
   padding: 15px 50px;
-  /* justify-content: space-around; */
 }
-.app-container >h1 {
-  text-align: center;
+.balance {
+  margin-top: 0px;
+}
+.add {
+  padding-top: 0px;
+  padding-bottom: 0%;
 }
 .expense-container {
   display: flex;
   justify-content: space-around;
   background-color: white;
 }
-.label {
-  display: block;
-  width: 100%;
+.app-container > h1 {
+  text-align: center;
+  margin-top: 0px;
 }
-.label >input {
+.form {
+  margin: 0%;
+}
+.form > label {
+  display: block;
+}
+.form > label> input {
   width: 100%;
   padding: 5px;
-  
 }
-.list {
+.transaction-list {
+  margin: 0%;
+  padding:  0%;
+}
+.transaction-list >li {
+  display: flex;
   justify-content: space-between;
-  display: block;
-  list-style: none;
   background-color: white;
-  padding: 5px;
-  box-shadow: rgb(70, 50, 13);
+  padding:5px 4px;
+  box-shadow:0 0 10px gray;
+  margin-top: 5px;
+  /* border-color: gray; */
 }
