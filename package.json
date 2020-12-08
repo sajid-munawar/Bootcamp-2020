@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/sajid-munawar/Bootcamp-2020/issues"
   },
-  "homepage": "https://github.com/sajid-munawar/Bootcamp-2020#readme"
+  "homepage": "https://github.com/sajid-munawar/Bootcamp-2020#readme",
+  "dependencies": {
+    "typescript": "^4.1.0-beta"
+  }
 }
