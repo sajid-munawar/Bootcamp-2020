@@ -1,2 +1,5 @@
 "use strict";
-console.log("Hello");
+var a = 123;
+var b = ["abc"];
+var c = a + b;
+console.log(c);
